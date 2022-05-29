@@ -16,4 +16,4 @@ EXPOSE 5000
 
 COPY --from=build /app/target/*.jar /app.jar
 
-CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app.jar"]
+CMD ["java", "-jar", "/app.jar"]
